@@ -1,0 +1,15 @@
+# Replace this reserved example with a domain you control.
+api.example.com {
+    @business path /v1/*
+    handle @business {
+        reverse_proxy 127.0.0.1:18688 {
+            # The application authenticates its own API key and never trusts
+            # user-supplied owner identity or forwarded admin claims.
+            header_up -X-Muse-Owner
+            header_up -X-Muse-Owner-Signature
+        }
+    }
+    handle {
+        respond "Not found" 404
+    }
+}

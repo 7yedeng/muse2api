@@ -1,0 +1,4 @@
+interface:
+  display_name: "Muse2API 调用"
+  short_description: "使用自己的端点生成文字、图片和视频，保留原任务回执并恢复下载"
+  default_prompt: "使用 $muse2api-client，通过我已配置的端点完成这次创作，媒体请求只提交一次并保存回执。"

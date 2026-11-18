@@ -1,0 +1,23 @@
+[Unit]
+Description=Muse2API single-user API adapter
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=muse2api
+Group=muse2api
+WorkingDirectory=/var/lib/muse2api
+EnvironmentFile=/etc/muse2api/muse2api.env
+ExecStart=/usr/local/bin/muse2api serve
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/muse2api
+
+[Install]
+WantedBy=multi-user.target

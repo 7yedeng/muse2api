@@ -1,0 +1,4 @@
+interface:
+  display_name: "Muse2API 本机维护"
+  short_description: "配置并启动自己的 Muse2API，指导浏览器显式授权、持久化与恢复"
+  default_prompt: "使用 $muse2api-local，在我指定的仓库配置并启动本机 API，我会自己完成浏览器授权。"

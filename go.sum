@@ -1,0 +1,6 @@
+github.com/CoolkHz/muse-protocol-go v0.0.0-20261030101003-573014e7fca5 h1:HCVtNG/AuxwYfBw2dlPqvSWuVE+IGeBCq77SEt8BEKw=
+github.com/CoolkHz/muse-protocol-go v0.0.0-20261030101003-573014e7fca5/go.mod h1:f5IlwzolTzt3RlhmSw82I0T6EpyoXhXCEjZj1n67xeI=
+golang.org/x/image v0.25.0 h1:Y6uW6rH1y5y/LK1J8BPWZtr6yZ7hrsy6hFrXjgsc2fQ=
+golang.org/x/image v0.25.0/go.mod h1:tCAmOEGthTtkalusGp1g3xa2gke8J6c2N565dTyl9Rs=
+golang.org/x/sys v0.38.0 h1:3yZWxaJjBmCWXqhN1qh02AkOnCQ1poK6oF+a7xWL6Gc=
+golang.org/x/sys v0.38.0/go.mod h1:OgkHotnGiDImocRcuBABYBEXf8A9a87e/uXjp9XT3ks=
