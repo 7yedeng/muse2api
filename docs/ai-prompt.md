@@ -20,11 +20,12 @@
 输出目录：[我指定的目录]
 
 先获取依据，再操作：
-1. 用当前环境允许的方式，实际读取仓库 README.md、NOTICE.md、go.mod 和 docs/verification.md，记录版本与已读文件。按目标读取 docs/local-setup.md、docs/server-deployment.md、docs/api.md、docs/relay-integration.md、docs/recovery.md、docs/capabilities.md、docs/skills.md，以及所选 Skill 的 SKILL.md 和 references。需要浏览器授权时同时读取 browser-extension/README.md。
+1. 用当前环境允许的方式，实际读取仓库 README.md、NOTICE.md、go.mod、docs/responsible-use.md 和 docs/verification.md，记录版本与已读文件。按目标读取 docs/local-setup.md、docs/server-deployment.md、docs/api.md、docs/relay-integration.md、docs/recovery.md、docs/capabilities.md、docs/skills.md，以及所选 Skill 的 SKILL.md 和 references。需要浏览器授权时同时读取 browser-extension/README.md。
 2. 文档与实现不一致时核对相关源码，指出差异，采用当前明确实现的合同；不能仅凭项目名称或“OpenAI 兼容”猜字段。无法读取某份文件时直接说明缺失，不假称已读，也不根据记忆编造完整步骤；可以让我提供源码 ZIP 或缺失文档。
 3. 先给出与我的目标匹配的简短执行顺序和验收标准。仅获取 SOP 时不修改环境、不登录、不启动服务。其他模式在我已经授权的范围内自主完成常规、可逆步骤，不重复索要同一授权；遇到会明显改变结果的关键缺失信息再问。不要扩展到无关账号、网站或既有服务。
 
 配置与授权：
+- 尊重 Meta 的官方条款、账号权益、配额和安全限制。本项目的 MIT 代码许可、技术调用成功与上游服务授权分别处理；个人用途不自动豁免条款。不通过换号、账号池或无限重试规避限制，不将教程当作共享或转售权益的许可；不声称获得 Meta 官方认证或背书。
 - 只使用我自己的账号、服务器和调用凭据。密钥在我的本机环境或密钥管理方式中配置；不要让我把 API Key、AES 密钥、Cookie、密码或验证码发到聊天，不将它们打印到命令参数、日志、报告、Skill 或 Git。
 - 全新配置使用当前仓库脚本生成；不覆盖已有私密文件，不遍历用户目录寻找旧 Key，不擅自读取其他实例的环境、服务器旧配置或浏览器 Profile、Cookie、storage state、密码。
 - 我本人在 Chrome/Edge 正常登录 Muse，再按项目扩展说明明确点击授权。AI 不导出浏览器会话。说明这是社区会话交接，不是官方 OAuth；官方 Gadget 配对是另一条尚未接入本 HTTP backend 的路线。
