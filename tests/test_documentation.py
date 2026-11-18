@@ -8,8 +8,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class DocumentationTests(unittest.TestCase):
     def test_relative_markdown_links_resolve_inside_the_source_tree(self):
-        files = [ROOT / "README.md"]
-        for folder in ("docs", "skills", "LICENSES", "browser-extension"):
+        files = [ROOT / "README.md", ROOT / "CONTRIBUTING.md"]
+        for folder in ("docs", "skills", "LICENSES", "browser-extension", ".github"):
             files.extend((ROOT / folder).rglob("*.md"))
         for path in files:
             for target in re.findall(r"\[[^\]]*\]\(([^\s)]+)\)", path.read_text(encoding="utf-8")):

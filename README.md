@@ -4,6 +4,8 @@
 
 这是社区协议适配器，不是 Meta 官方 OpenAI API。项目默认是**单用户实例**：一个 Muse 会话、一组上游配置、一个服务 API Key。配套的浏览器扩展必须由使用者自己安装并点击授权；Skill 不会读取浏览器 Profile、密码或 Cookie。
 
+想让自己的 AI 助手整理并执行环境对应的完整流程，可以直接复制 [给 AI 的完整 SOP 提示词](docs/ai-prompt.md)，填写目标与环境；不要填写凭据。
+
 ## 五步上手
 
 需要 Go（最低版本以 `go.mod` 为准）、Python 3.10+，以及能正常登录并使用 Muse 的 Chrome 或 Edge。以下步骤不会购买、注册或解除上游账号限制。
@@ -76,6 +78,7 @@ python scripts/run.py
 
 ## 文档索引
 
+- [给 AI 的完整 SOP 提示词](docs/ai-prompt.md)
 - [本机安装与授权](docs/local-setup.md)
 - [API、配置与请求示例](docs/api.md)
 - [服务器、Docker、TLS 与持久化](docs/server-deployment.md)
@@ -84,3 +87,7 @@ python scripts/run.py
 - [输入输出与能力证据](docs/capabilities.md)
 - [Skill 安装与使用](docs/skills.md)
 - [候选验证与复现](docs/verification.md)
+
+## 贡献与审核
+
+贡献者通过 Fork、工作分支和 Pull Request 提交修改，由维护者审核后合并。规则、离线检查和敏感文件要求见 [CONTRIBUTING.md](CONTRIBUTING.md)，默认代码所有者见 [CODEOWNERS](.github/CODEOWNERS)。普通贡献者的合并需要有效审批与通过的检查；GitHub 仓库保护设置负责实际执行。所有者保留管理员维护权限，不将其作为 AI 或协作者擅自绕过审核的授权。

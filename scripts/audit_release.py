@@ -9,7 +9,7 @@ import re
 import stat
 import subprocess
 
-ROOT_FILES = {".gitignore", ".dockerignore", ".env.example", "Dockerfile", "LICENSE", "NOTICE.md", "README.md", "PLAN.md", "go.mod", "go.sum"}
+ROOT_FILES = {".gitignore", ".dockerignore", ".env.example", "Dockerfile", "LICENSE", "NOTICE.md", "README.md", "PLAN.md", "CONTRIBUTING.md", "go.mod", "go.sum"}
 ROOT_DIRS = {"cmd", "internal", "docs", "deploy", "skills", "browser-extension", "scripts", "tests", "LICENSES", ".github"}
 PRIVATE_DIRS = {"env", "private", "runtime", "data", "state", "secrets", "client-state", "vendor", "bin", "dist", "release", ".cache", ".ssh", ".codex", ".claude", "__pycache__", ".venv", "backups"}
 PRIVATE_NAMES = {"cookies.json", "session.json", "pairing.json", "identity.json", "id_rsa", "id_ed25519", "research.env"}
